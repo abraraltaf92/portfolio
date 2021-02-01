@@ -4,7 +4,7 @@ import 'package:first_proj/util/config.dart';
 import 'package:first_proj/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
-import 'package:first_proj/skills_list.dart';
+import 'package:first_proj/lists/skills_list.dart';
 
 class AboutMe extends StatefulWidget {
   @override

@@ -1,4 +1,4 @@
-import './models/projects.dart';
+import '../models/projects.dart';
 
 final List<Project> projectList = [
   Project(

@@ -1,4 +1,4 @@
-import 'package:first_proj/project_list.dart';
+import 'package:first_proj/lists/project_list.dart';
 import 'package:first_proj/util/config.dart';
 import 'package:first_proj/widgets/project_preview.dart';
 import 'package:flutter/material.dart';

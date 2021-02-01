@@ -4,6 +4,7 @@ import 'package:first_proj/pages/home.dart';
 import 'package:first_proj/pages/projects.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:flutter/rendering.dart';
 
 class Wrapper extends StatefulWidget {
   @override
@@ -56,10 +57,12 @@ class _WrapperState extends State<Wrapper> {
       'Projects',
     ];
     List<Widget> _navItems() {
-      return (List.generate(
-        3,
-        (index) => navButton(context, buttons[index], index),
-      ));
+      return [
+        ...List.generate(
+          3,
+          (index) => navButton(context, buttons[index], index),
+        )
+      ];
     }
 
     List<Widget> _pages = [

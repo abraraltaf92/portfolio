@@ -42,7 +42,7 @@ class _SocialHandlesState extends State<SocialHandles> {
   final List<Map<String, dynamic>> _socials = [
     {
       'icon': Icons.mail_outline_rounded,
-      'link': 'mailto:onuifeanyi95@gmail.com'
+      'link': 'mailto:abraraltaf92@icloud.com'
     },
     {'icon': FontAwesome.twitter, 'link': 'https://twitter.com/abraraltaf92'},
     {'icon': FontAwesome.github, 'link': 'https://github.com/abraraltaf92'},

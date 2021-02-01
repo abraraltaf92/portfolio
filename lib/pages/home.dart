@@ -115,7 +115,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   Container(
                     padding: const EdgeInsets.only(left: 8.0, top: 8.0),
                     child: Text(
-                      'I am a flutter developer who loves to build responsive and scaleable apps for Android, IOS and Web. I am currently in a race to grab as much I can from the innovative world to create more innovations. I believe in unlearning errors. And I love to code ;',
+                      'I am a flutter developer who loves to build responsive and scaleable apps for Android, IOS and Web. I am currently in a race to grab as much I can from the innovative world to create more innovations. I believe in unlearning errors. And I love to code ; \nTo me it\'s like if they talk about WEB DEV, APP DEV i\'ll reflect with FLUTTER',
                       softWrap: true,
                       overflow: TextOverflow.fade,
                       textAlign: mediaQuery.width < 550

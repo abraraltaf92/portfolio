@@ -52,7 +52,7 @@ class _AboutMeState extends State<AboutMe> {
                   text: 'View Resume',
                   callBack: () {
                     final url =
-                        'https://drive.google.com/file/d/1bPpr7jG3_XX9cuHKjtcfEHT06lFVqgji/view?usp=sharing';
+                        'https://drive.google.com/file/d/1PGXyK1mAFrip9yHE7YyZN78jP6FbQCZG/view?usp=sharing';
                     html.window.open(url, '');
                   },
                 ),

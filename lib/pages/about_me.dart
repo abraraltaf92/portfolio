@@ -36,7 +36,7 @@ class _AboutMeState extends State<AboutMe> {
             Container(
               padding: const EdgeInsets.only(left: 8.0, right: 8.0),
               child: Text(
-                'Energetic and passionate B.Tech underGrad(ECE) student aiming to use every inch of my knowledge at its best of behest. I have used a lot of online resources and hands on project to be where I am today. Shoutout to some of them : Youtube Tutorials , Udemy Courses , Medium Articles , StackOverflow , Github etc. I have sound knowledge about FLUTTER, DART, FIREBASE, GIT, GITHUB, PYTHON AND A GOOD HOLD OVER C++, C, JAVASCRIPT, ML, DEEP LEARNING CONCEPTS and more.',
+                'Energetic and passionate B.Tech underGrad(ECE) student aiming to use every inch of my knowledge at its best of behest. I have used a lot of online resources and hands on project to be where I am today. Shoutout to some of them : Youtube Tutorials , Udemy Courses , Medium Articles , StackOverflow , Github etc. I have sound knowledge of FLUTTER, DART, FIREBASE, GIT, GITHUB, PYTHON AND A GOOD HOLD OVER C++, C, JAVASCRIPT, ML, DEEP LEARNING CONCEPTS and more.',
                 softWrap: true,
                 textAlign: TextAlign.center,
                 style: TextStyle(

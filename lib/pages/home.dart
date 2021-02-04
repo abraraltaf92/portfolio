@@ -43,8 +43,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   @override
   void dispose() {
-    super.dispose();
     _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -78,7 +78,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   style: TextStyle(
                     fontSize: Config.xMargin(context, 3),
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Poppins Bold',
                   ),
                 ),
               ),
@@ -98,7 +97,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       color: Theme.of(context).accentColor,
                       fontSize: Config.xMargin(context, 10),
                       fontWeight: FontWeight.w900,
-                      fontFamily: 'Poppins Bold',
                     ),
                   ),
                   Padding(
@@ -108,7 +106,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       style: TextStyle(
                         fontSize: Config.xMargin(context, 3),
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Poppins Bold',
                       ),
                     ),
                   ),

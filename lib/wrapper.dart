@@ -85,14 +85,12 @@ class _WrapperState extends State<Wrapper> {
                       'a',
                       style: TextStyle(
                           fontWeight: FontWeight.w900,
-                          fontFamily: 'Poppins Bold',
                           fontSize: Config.xMargin(context, 6)),
                     ),
                     Text(
                       'A',
                       style: TextStyle(
                           fontWeight: FontWeight.w900,
-                          fontFamily: 'Poppins Bold',
                           color: Theme.of(context).accentColor,
                           fontSize: Config.xMargin(context, 6)),
                     ),

@@ -28,7 +28,6 @@ class _ProjectsState extends State<Projects> {
             style: TextStyle(
               fontSize: Config.xMargin(context, 5),
               fontWeight: FontWeight.w900,
-              fontFamily: 'Poppins Bold',
             ),
           ),
           Expanded(

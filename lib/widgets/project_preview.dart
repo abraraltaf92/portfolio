@@ -35,7 +35,6 @@ class ProjectPreview extends StatelessWidget {
                 style: TextStyle(
                   fontSize: Config.xMargin(context, 4),
                   fontWeight: FontWeight.w900,
-                  fontFamily: 'Poppins Bold',
                 ),
               ),
               subtitle: Expanded(

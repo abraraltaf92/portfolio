@@ -4,8 +4,8 @@
 ### Todo's :
   
   - [x] Use Roboto font & rm unneceesary fonts 
-  - [ ] resize images
-  - [ ] Testing of canvaskit and html rendering on both mobile and desktop for performance and space consumption.
+  - [x] resize images
+  - [x] Testing of canvaskit and html rendering on both mobile and desktop for performance and space consumption.
   - [ ] Auto Deploy Flutter Web App to Firebase Hosting on every commit - [link](https://medium.com/flutter-community/auto-deploy-flutter-web-app-to-firebase-hosting-on-every-commit-ee0527290733)
   
      Review from my friend [@muzam1l](https://github.com/muzam1l)💩: 

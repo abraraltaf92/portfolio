@@ -18,7 +18,7 @@ final List<Skill> skillList = [
   ),
   Skill(
     id: 2,
-    icon: MaterialCommunityIcons.web,
+    icon: FontAwesome.chrome,
     title: 'Web Apps',
     description:
         'Build and host responsive webapps that looks beautiful on all screen sizes.',

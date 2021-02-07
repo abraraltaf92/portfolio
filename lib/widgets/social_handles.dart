@@ -40,15 +40,16 @@ class _SocialHandlesState extends State<SocialHandles> {
   }
 
   final List<Map<String, dynamic>> _socials = [
-    {
-      'icon': Icons.mail_outline_rounded,
-      'link': 'mailto:abraraltaf92@icloud.com'
-    },
+    {'icon': FontAwesome.envelope_o, 'link': 'mailto:abraraltaf92@icloud.com'},
     {'icon': FontAwesome.twitter, 'link': 'https://twitter.com/abraraltaf92'},
     {'icon': FontAwesome.github, 'link': 'https://github.com/abraraltaf92'},
     {
       'icon': FontAwesome.linkedin,
       'link': 'https://www.linkedin.com/in/abraraltaf92/'
+    },
+    {
+      'icon': FontAwesome.instagram,
+      'link': 'https://www.instagram.com/abraraltaf92/'
     },
     {'icon': FontAwesome.whatsapp, 'link': 'https://wa.me/+917889881902'},
   ];

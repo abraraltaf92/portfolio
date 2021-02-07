@@ -3,6 +3,7 @@ import 'package:first_proj/pages/about_me.dart';
 import 'package:first_proj/pages/home.dart';
 import 'package:first_proj/pages/projects.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter/rendering.dart';
 
@@ -21,6 +22,7 @@ class _WrapperState extends State<Wrapper> {
     super.initState();
   }
 
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
   void swipe(int index) {
     _pageController.animateToPage(
       index,
@@ -72,6 +74,7 @@ class _WrapperState extends State<Wrapper> {
     ];
 
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -98,6 +101,13 @@ class _WrapperState extends State<Wrapper> {
                 ),
               ),
         actions: width > 550 ? _navItems() : [],
+        leading: width < 550
+            ? IconButton(
+                icon: Icon(FontAwesome.ellipsis_v),
+                onPressed: () {
+                  _scaffoldKey.currentState.openDrawer();
+                })
+            : null,
       ),
       drawer: width < 550
           ? Drawer(
@@ -148,7 +158,7 @@ class _WrapperState extends State<Wrapper> {
         child: FloatingActionButton(
           onPressed: () => swipe(0),
           child: Icon(
-            Icons.arrow_upward,
+            FontAwesome.arrow_up,
           ),
         ),
         replacement: SizedBox.shrink(),

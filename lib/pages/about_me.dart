@@ -1,10 +1,10 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
-import 'package:first_proj/util/config.dart';
-import 'package:first_proj/widgets/rounded_button.dart';
-import 'package:flutter/material.dart';
 
-import 'package:first_proj/lists/skills_list.dart';
+import 'package:abraraltaf/lists/skills_list.dart';
+import 'package:abraraltaf/util/config.dart';
+import 'package:abraraltaf/widgets/rounded_button.dart';
+import 'package:flutter/material.dart';
 
 class AboutMe extends StatefulWidget {
   @override
@@ -29,7 +29,6 @@ class _AboutMeState extends State<AboutMe> {
                 style: TextStyle(
                   fontSize: Config.xMargin(context, 6),
                   fontWeight: FontWeight.w900,
-                  fontFamily: 'Poppins Bold',
                 ),
               ),
             ),
@@ -52,7 +51,7 @@ class _AboutMeState extends State<AboutMe> {
                   text: 'View Resume',
                   callBack: () {
                     final url =
-                        'https://drive.google.com/file/d/1PGXyK1mAFrip9yHE7YyZN78jP6FbQCZG/view?usp=sharing';
+                        'https://drive.google.com/file/d/1Vmep5fLFMqDBxahcTY0Ey-pdRfhO1zN8/view?usp=sharing';
                     html.window.open(url, '');
                   },
                 ),
@@ -69,7 +68,6 @@ class _AboutMeState extends State<AboutMe> {
                 style: TextStyle(
                   fontSize: Config.xMargin(context, 5),
                   fontWeight: FontWeight.w900,
-                  fontFamily: 'Poppins Bold',
                 ),
               ),
             ),

@@ -1,6 +1,6 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
-import 'package:first_proj/util/config.dart';
+import 'package:abraraltaf/util/config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -20,14 +20,18 @@ class _SocialHandlesState extends State<SocialHandles> {
         ),
       ),
       margin: EdgeInsets.only(right: Config.xMargin(context, 4)),
-      child: RaisedButton(
-        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        padding: EdgeInsets.all(Config.xMargin(context, 3)),
-        shape: CircleBorder(),
-        color: Colors.transparent,
-        hoverColor: Theme.of(context).accentColor,
-        elevation: 4,
-        hoverElevation: 8,
+      child: ElevatedButton(
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all(CircleBorder()),
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          padding: MaterialStateProperty.all(
+              EdgeInsets.all(Config.xMargin(context, 3))),
+          backgroundColor: MaterialStateProperty.all(Colors.transparent),
+          overlayColor:
+              MaterialStateProperty.all(Theme.of(context).accentColor),
+          elevation: MaterialStateProperty.all(4),
+          animationDuration: Duration(milliseconds: 2000),
+        ),
         child: Icon(
           icon,
           size: Config.xMargin(context, 5),
@@ -40,18 +44,30 @@ class _SocialHandlesState extends State<SocialHandles> {
   }
 
   final List<Map<String, dynamic>> _socials = [
-    {'icon': FontAwesome.envelope_o, 'link': 'mailto:abraraltaf92@icloud.com'},
-    {'icon': FontAwesome.twitter, 'link': 'https://twitter.com/abraraltaf92'},
-    {'icon': FontAwesome.github, 'link': 'https://github.com/abraraltaf92'},
     {
-      'icon': FontAwesome.linkedin,
+      'icon': MaterialCommunityIcons.email,
+      'link': 'mailto:abrar_12btech18@nitsri.net'
+    },
+    {
+      'icon': MaterialCommunityIcons.twitter,
+      'link': 'https://twitter.com/abraraltaf92'
+    },
+    {
+      'icon': MaterialCommunityIcons.github_circle,
+      'link': 'https://github.com/abraraltaf92'
+    },
+    {
+      'icon': MaterialCommunityIcons.linkedin,
       'link': 'https://www.linkedin.com/in/abraraltaf92/'
     },
     {
-      'icon': FontAwesome.instagram,
+      'icon': MaterialCommunityIcons.instagram,
       'link': 'https://www.instagram.com/abraraltaf92/'
     },
-    {'icon': FontAwesome.whatsapp, 'link': 'https://wa.me/+917889881902'},
+    {
+      'icon': MaterialCommunityIcons.whatsapp,
+      'link': 'https://wa.me/+917889881902'
+    },
   ];
 
   @override

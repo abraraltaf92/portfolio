@@ -1,7 +1,7 @@
-import 'package:first_proj/util/config.dart';
-import 'package:first_proj/pages/about_me.dart';
-import 'package:first_proj/pages/home.dart';
-import 'package:first_proj/pages/projects.dart';
+import 'package:abraraltaf/pages/about_me.dart';
+import 'package:abraraltaf/pages/home.dart';
+import 'package:abraraltaf/pages/projects.dart';
+import 'package:abraraltaf/util/config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -103,7 +103,8 @@ class _WrapperState extends State<Wrapper> {
         actions: width > 550 ? _navItems() : [],
         leading: width < 550
             ? IconButton(
-                icon: Icon(FontAwesome.ellipsis_v),
+                icon: Icon(MaterialCommunityIcons.dots_vertical_circle,
+                    color: Colors.teal),
                 onPressed: () {
                   _scaffoldKey.currentState.openDrawer();
                 })
@@ -157,9 +158,7 @@ class _WrapperState extends State<Wrapper> {
         visible: _pageIndex == 2,
         child: FloatingActionButton(
           onPressed: () => swipe(0),
-          child: Icon(
-            FontAwesome.arrow_up,
-          ),
+          child: Icon(MaterialCommunityIcons.arrow_up),
         ),
         replacement: SizedBox.shrink(),
       ),

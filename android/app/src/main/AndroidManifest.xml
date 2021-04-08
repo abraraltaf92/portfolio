@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.first_proj">
+    package="com.example.abraraltaf">
    <application
-        android:label="first_proj"
+        android:label="abraraltaf"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

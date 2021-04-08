@@ -1,5 +1,6 @@
-import 'package:first_proj/models/projects.dart';
-import 'package:first_proj/util/config.dart';
+import 'package:abraraltaf/models/projects.dart';
+import 'package:abraraltaf/util/config.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 // ignore: avoid_web_libraries_in_flutter
@@ -24,14 +25,15 @@ class ProjectPreview extends StatelessWidget {
           child: GridTile(
             child: Image.asset(
               project.image,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
               alignment: Alignment.center,
             ),
             footer: GridTileBar(
               backgroundColor: Colors.black.withOpacity(0.6),
               title: Text(
                 project.title,
-                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.start,
                 style: TextStyle(
                   fontSize: Config.xMargin(context, 4),
                   fontWeight: FontWeight.w900,
@@ -46,16 +48,21 @@ class ProjectPreview extends StatelessWidget {
                       height: 1.0,
                     ),
                     softWrap: true,
-                    maxLines: 4,
                   ),
                 ),
               ),
-              trailing: FlatButton.icon(
-                label: Text('GitHub'),
-                icon: Icon(
-                  FontAwesome.github,
-                  size: Config.xMargin(context, 5),
-                ),
+              trailing: TextButton.icon(
+                style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all(Colors.white)),
+                label: (project.id == 1 || project.id == 2)
+                    ? Text('Google Playstore')
+                    : Text('GitHub'),
+                icon: (project.id == 1 || project.id == 2)
+                    ? Icon(MaterialCommunityIcons.google_play)
+                    : Icon(
+                        MaterialCommunityIcons.github_circle,
+                        size: Config.xMargin(context, 5),
+                      ),
                 onPressed: () {
                   html.window.open(project.link, '');
                 },

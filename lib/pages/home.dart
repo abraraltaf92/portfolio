@@ -1,9 +1,10 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
+import 'package:abraraltaf/util/config.dart';
+import 'package:abraraltaf/widgets/rounded_button.dart';
+import 'package:abraraltaf/widgets/social_handles.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:first_proj/util/config.dart';
-import 'package:first_proj/widgets/rounded_button.dart';
-import 'package:first_proj/widgets/social_handles.dart';
+
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -50,18 +51,18 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context).size;
-    var image = Container(
+    Container image = Container(
       decoration: BoxDecoration(
         color: Theme.of(context).accentColor,
         shape: BoxShape.circle,
         image: DecorationImage(
-          image: AssetImage('images/image.png'),
+          image: AssetImage('images/abrar.png'),
           fit: BoxFit.contain,
         ),
       ),
     );
 
-    var column = Container(
+    Container column = Container(
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: mediaQuery.width < 550
@@ -112,7 +113,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   Container(
                     padding: const EdgeInsets.only(left: 8.0, top: 8.0),
                     child: Text(
-                      'I am a flutter developer who loves to build responsive and scaleable apps for Android, IOS and Web. I am currently in a race to grab as much I can from the innovative world to create more innovations. I believe in unlearning errors. And I love to code ; \nTo me it\'s like if they talk about WEB DEV, APP DEV i\'ll reflect with FLUTTER',
+                      'I am a flutter developer who loves to build responsive and scaleable apps for Android, IOS and Web. I am currently in a race to grab as much I can from the innovative world to create more innovations. I believe in unlearning errors. And I love to code ; \nTo me it\'s like if they talk about WEB DEV, APP DEV i\'ll reflect with FLUTTER.',
                       softWrap: true,
                       overflow: TextOverflow.fade,
                       textAlign: mediaQuery.width < 550

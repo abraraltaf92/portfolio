@@ -1,6 +1,7 @@
-import 'package:first_proj/lists/project_list.dart';
-import 'package:first_proj/util/config.dart';
-import 'package:first_proj/widgets/project_preview.dart';
+import 'package:abraraltaf/lists/project_list.dart';
+import 'package:abraraltaf/util/config.dart';
+import 'package:abraraltaf/widgets/project_preview.dart';
+
 import 'package:flutter/material.dart';
 
 class Projects extends StatefulWidget {

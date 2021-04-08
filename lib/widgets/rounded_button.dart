@@ -1,4 +1,4 @@
-import 'package:first_proj/util/config.dart';
+import 'package:abraraltaf/util/config.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
@@ -18,13 +18,19 @@ class RoundedButton extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(40),
-        child: RaisedButton(
-          padding: EdgeInsets.symmetric(horizontal: 50),
-          color: Colors.transparent,
-          elevation: 4,
-          hoverElevation: 8,
-          hoverColor: Theme.of(context).accentColor,
-          animationDuration: Duration(milliseconds: 300),
+        child: ElevatedButton(
+          style: ButtonStyle(
+            padding:
+                MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 50)),
+            backgroundColor: MaterialStateProperty.all(Colors.transparent),
+            overlayColor:
+                MaterialStateProperty.all(Theme.of(context).accentColor),
+
+            elevation: MaterialStateProperty.all(4),
+            // hoverElevation: 8,
+            // hoverColor: Theme.of(context).accentColor,
+            animationDuration: Duration(milliseconds: 2000),
+          ),
           child: Text(
             text,
             style: TextStyle(

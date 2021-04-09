@@ -11,4 +11,7 @@
   
      Review from my friend [@muzam1l](https://github.com/muzam1l)💩: 
   - [ ] Its 4mb and without gzipped, gzip it and it will go sub 1mb and your main bundle is 1.4mb, so it will be 200kb or so gzipped, and rest is fonts and icons, use single lighweight icon source or even isolated svg <p style ="color: teal"> *will check it out soon! </p>
+  
+# HOW IT PERFORMS :
 
+![Google Page Speed Insights Test](https://github.com/abraraltaf92/portfolio/blob/main/images/page_speed_insights.png)

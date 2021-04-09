@@ -14,7 +14,7 @@ final List<Project> projectList = [
     title: 'Kaeshir Dictionary',
     description:
         'To revive our mother-tongue , we have developed an app where one can find all the common words of our mother tongue - Kashmiri alongwith pronunciation. Already have more than 3k downloads on google play store.',
-    image: 'images/kd_mockup_25.png',
+    image: 'images/mockup_copy.png',
     link:
         'https://play.google.com/store/apps/details?id=com.izanmajeed.dictionary',
   ),

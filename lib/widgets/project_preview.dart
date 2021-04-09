@@ -43,6 +43,7 @@ class ProjectPreview extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Text(
                     project.description,
+                    maxLines: 5,
                     style: TextStyle(
                       fontSize: Config.xMargin(context, 2.3),
                       height: 1.0,
